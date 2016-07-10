@@ -23,5 +23,5 @@
     name: "vm_backup"
     minute: 0
     hour: 3
-    weekday: Friday
+    weekday: 5
     job: /usr/local/bin/vm_backup.sh
