@@ -18,3 +18,10 @@
     owner: root
     group: root
     mode: 0644
+
+- cron:
+    name: "vm_backup"
+    minute: 0
+    hour: 3
+    weekday: Friday
+    job: /usr/local/bin/vm_backup.sh
