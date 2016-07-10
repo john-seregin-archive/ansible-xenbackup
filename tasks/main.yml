@@ -13,7 +13,7 @@
     mode: 0644
 
 - copy:
-    src: files/{{ inventory_hostname }}/vm_backup.conf
+    src: files/{{ inventory_hostname }}/vm_backup.cfg
     dest: /usr/local/bin/
     owner: root
     group: root
