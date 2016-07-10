@@ -25,3 +25,10 @@
     hour: 3
     weekday: 5
     job: /usr/local/bin/vm_backup.sh
+
+- cron:
+    name: "delete old vm_backup"
+    minute: 0
+    hour: 3
+    weekday: 5
+    job: find `grep backup_dir /usr/local/bin/vm_backup.cfg | cut -d \" -f 2` -name '*.xva' -mtime +{{ backup_age }} -exec rm -f {} \;
