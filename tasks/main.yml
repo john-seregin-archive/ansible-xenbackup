@@ -13,8 +13,8 @@
     mode: 0644
 
 - copy:
-    src: files/{{ inventory_hostname }}/xenserver_backup.conf
-    dest: /usr/local/bin/vm_backup.conf
+    src: files/{{ inventory_hostname }}/vm_backup.conf
+    dest: /usr/local/bin/
     owner: root
     group: root
     mode: 0644
