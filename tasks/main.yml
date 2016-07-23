@@ -22,7 +22,7 @@
 - cron:
     name: "vm_backup"
     minute: 0
-    hour: 3
+    hour: 21
     weekday: 5
     job: /usr/local/bin/vm_backup.sh
 
